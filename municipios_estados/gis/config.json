@@ -1,0 +1,33 @@
+{
+    "connection":{
+        "host":"localhost:3306",
+        "port": "3306",
+        "dbname" : "gis",
+        "charset" : "utf8",
+        "user" : "root",
+        "password": ""
+    },
+    "principal": {
+        "tableDB":"users",
+        "divId" : "#combo_2",
+        "parentTag" : "select",
+        "childTag" : "option",
+        "label" : "Escolha o Usuario",
+        "caminho": "./gis/",
+        "extencaoArquivo" : ".php",
+        "colunaFiltro" : "id",
+        "colunaLabel":"name"
+    },
+    "secundario": {
+        "tableDB":"consultas",
+        "divId" : "#combo_2",
+        "parentTag" : "select",
+        "childTag" : "option",
+        "label" : "Escolha o dentista",
+        "caminho": "./gis/",
+        "extencaoArquivo" : ".php",
+        "colunaFiltro" : "id_user",
+        "colunaLabel":"dentista"
+
+    }
+}

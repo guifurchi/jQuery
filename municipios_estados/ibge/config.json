@@ -1,0 +1,32 @@
+{
+    "connection":{
+        "host":"mysql:host=localhost:3306",
+        "dbname" : "ibge",
+        "charset" : "charset=utf8",
+        "user" : "root",
+        "password": ""
+    },
+    "principal": {
+        "tableDB":"estados",
+        "divId" : "#combo_1",
+        "parentTag" : "select",
+        "childTag" : "option",
+        "label" : "Escolha e Estado",
+        "caminho": "./ibge/",
+        "extencaoArquivo" : ".php",
+        "colunaFiltro" : "uf",
+        "colunaLabel":"uf"
+    },
+    "secundario": {
+        "tableDB":"municipios",
+        "divId" : "#combo_1",
+        "parentTag" : "select",
+        "childTag" : "option",
+        "label" : "Escolha o municipio",
+        "caminho": "./ibge/",
+        "extencaoArquivo" : ".php",
+        "colunaFiltro" : "uf",
+        "colunaLabel":"municipio"
+
+    }
+}
